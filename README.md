@@ -25,11 +25,11 @@ Users should be able to:
 
 ### Screenshot
 
-![screen shot of full screen webpage](https://github.com/Eileenpk/Notifications-page/blob/main/notifications-page/src/assets/ScreenshotFull.png)
-![screen shot of mobile webpage](https://github.com/Eileenpk/Notifications-page/blob/main/notifications-page/src/assets/ScreenshotMobile.png)
+![screen shot of full screen webpage](https://github.com/Eileenpk/Notifications-page/blob/main/src/assets/ScreenshotFull.png)
+![screen shot of mobile webpage](https://github.com/Eileenpk/Notifications-page/blob/main/src/assets/ScreenshotMobile.png)
 ### Links
 
-- Solution URL: [GitHub](https://github.com/Eileenpk/Notifications-page.git)
+- Solution URL: [GitHub](https://github.com/Eileenpk/Notifications-page)
 - Live Site URL: [live site](https://eileenpk.github.io/Notifications-page/)
 
 ### Built with
