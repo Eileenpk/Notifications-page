@@ -15,7 +15,7 @@ export default function Card({src, name, action, post, group, pictureSrc, messag
         return (
             <section className='card' style={styles} >
                 
-                <img className='card--img' src={src} />
+                <img className='card--img' src={src} alt={`${name}'s avatar`}/>
                 <div className='card--inner_text_wrapper'>
                     
                     <div className='card--action'>
@@ -29,7 +29,7 @@ export default function Card({src, name, action, post, group, pictureSrc, messag
                         
                         
                     </div>
-                    {pictureSrc && <img className='card--photo-comment' src={pictureSrc} /> }
+                    {pictureSrc && <img className='card--photo-comment' src={pictureSrc} alt={`${name} playing chess`}/> }
                     
                     
                     
