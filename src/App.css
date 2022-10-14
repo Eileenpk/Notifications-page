@@ -1,0 +1,237 @@
+/* general styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9fafd;
+  height: 100vh;
+}
+
+body,
+.header--btn,
+.header--text_wapper,
+.header--notifications {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.header--text_wapper,
+.header--notifications {
+  font-weight: 800;
+}
+body,
+.App,
+.header--notifications,
+.header--text_wapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  background: #FFF;
+  width: 100vw;
+  max-width: 45.625rem;
+  box-shadow: 0px 20px 60px 0px #4961A80D;
+  border-radius: 1rem;
+}
+
+/* header */
+
+header {
+  min-width: 19.6875rem;
+  height: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.header--text_wapper {
+  flex-direction: row;
+}
+
+h1 {
+  color: #1C202B;
+  font-size: 1.25rem;
+}
+
+.header--notifications {
+  height: 1.5625rem;
+  width: 2rem;
+  font-size: 1rem;
+  margin-left: 0.5625rem;
+  background-color: #0A327B;
+  border-radius: 0.375rem;
+  color: #FFF;
+}
+
+.header--btn {
+  border: none;
+  background: #FFF;
+  color: #5E6778;
+  font-size: 0.875rem;
+}
+
+.header--btn,
+.card--post,
+.card--header,
+.card--group,
+.card--message,
+.card--photo-comment {
+  cursor: pointer;
+}
+
+/* media Q for header */
+
+@media (min-width: 720px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .header--btn {
+    font-size: 1rem;
+  }
+
+  header {
+    width: 41.875rem;
+  }
+}
+
+/* card styles */
+
+.card {
+  width: 21.4375rem;
+  padding: 1rem 1.75rem 1rem 1rem;  
+  margin-bottom: 0.625rem;
+  border-radius: 0.5rem;
+  display: flex; 
+  align-items: flex-start;
+}
+
+.card--img {
+  width: 2.4375rem;
+  border-radius: 50%;
+  margin-right: 0.8125rem; 
+}
+
+.card--inner_text_wrapper {
+  width: 249px;
+}
+.card--header {
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: #1C202B;
+}
+
+.card--text {
+  display: inline-block;
+}
+
+span {
+  font-size: 0.875rem;
+}
+
+.card--header,
+.card--action,
+.card--post {
+  padding-right: 0.375rem;
+}
+
+.card--unread-mark {
+  margin-left: 0.375rem;
+}
+
+.card--header ,
+.card--action{
+  display: inline;
+}
+
+.card--action {
+  color: #5E6778;
+}
+
+.card--group {
+  color: #0A327B;
+  font-weight: 700;
+}
+
+.card--post,
+.card--group {
+  padding-left: 0.375rem;
+}
+
+.card--unread-mark {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  background-color: #F65552;
+  display: inline-block;
+  
+}
+
+.card--time {
+  font-size: 0.875rem;
+  color: #939CAD;
+}
+
+.bold {
+  color: #5E6778;
+  font-weight: 700;
+}
+
+.card--message {
+  border: 1px solid #DDE7EE;
+  padding: 1rem;
+  color: #5E6778;
+  margin-top: 0.75rem;
+}
+
+.card--photo-comment {
+  object-fit: cover;
+  width: 2.4375rem;
+  height: 2.4375rem;
+  border-radius: 0.4375rem;
+}
+
+/* media Q for card */
+
+@media (min-width: 720px) {
+  .card {
+    width: 41.875rem;
+  }
+
+  span,
+  .card--header,
+  .card--time {
+    font-size: 1rem;
+  }
+
+  .card--inner_text_wrapper,
+  .card--text,
+  .card--action {
+    width: 34.625rem;
+  }
+
+  .card--time {
+    width: 10rem;
+  }
+
+  div[style] {
+    width: 32rem !important;
+  }
+
+  .card--photo-comment {
+    position: relative;
+    left: 32rem;
+    bottom: 1.3rem;
+  }
+  img + .card--time {
+    position: relative;
+    bottom: 2.5rem;
+  }
+}
